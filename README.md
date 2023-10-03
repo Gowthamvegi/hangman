@@ -1,37 +1,45 @@
-#**Hangman Game Project**
+# Hangman Game
 
-#Description:
-##Hangman is a classic word guessing game where one player thinks of a word, and the other player tries to guess it one letter at a time. 
-The game continues until the player correctly guesses the word or runs out of attempts.
+Welcome to the classic word-guessing game, Hangman! This Python-based Hangman game will challenge your vocabulary and guessing skills. Try to guess the hidden word before you run out of attempts.
 
-Approach:
+## How to Play
 
-Word Selection:
-Choose a collection of words to be used as the game's word bank. You can store them in a list or import them from an external file.
+1. Clone or download this repository to your local machine.
 
-Random Word Selection:
-Implement a function to select a random word from the word bank. The selected word will be the one the player needs to guess.
+2. Open your terminal or command prompt and navigate to the project folder.
 
-Game Loop:
-Create a loop that will run the game until it's either won or lost. You can use a while loop for this purpose.
+3. Run the game by executing the following command:
 
-Display Hidden Word:
-Display the current state of the word with underscores representing unguessed letters and revealed letters for correct guesses.
+   ```python hangman.py```
 
-User Input:
-Take user input for guessing a letter. Ensure input validation to handle non-alphabet characters and repeated guesses.
+4. You'll be presented with a series of underscores representing the letters in the word to guess, along with the number of incorrect guesses allowed.
 
-Check Guess:
-Check if the guessed letter is in the selected word. Update the display accordingly.
+5. Enter a letter to make a guess. Make sure it's a single letter (A-Z) and not a number or symbol.
 
-Incorrect Guess Tracking:
-Keep track of incorrect guesses and display them to the player.
+6. If your guess is correct, the letter will be revealed in the word. If it's wrong, your incorrect guess count will increase, and the hangman drawing will progress.
 
-Winning Condition:
-Check if the player has successfully guessed the entire word. If yes, end the game with a win message.
-Losing Condition:
+7. Continue guessing letters until you either successfully guess the word or run out of attempts.
 
-Implement a limit on the number of incorrect guesses allowed. If the player exceeds this limit, end the game with a loss message.
+8. After each game, you'll have the option to play again.
 
-Play Again Option:
-After each game, ask the player if they want to play again. If yes, start a new game. If no, exit the program.
+## Features
+
+- Randomly selects words from a word bank.
+- Tracks incorrect guesses and displays them.
+- Provides a hangman drawing as the game progresses.
+- Offers the ability to play multiple games in a row.
+
+## Requirements
+
+- Python 3.x
+
+## Additional Notes
+
+- You can customize the word bank by modifying the `word_bank.py` file.
+- Feel free to extend the game by adding more words, difficulty levels, or additional features.
+
+Enjoy playing Hangman!
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
